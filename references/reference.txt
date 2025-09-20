@@ -1,0 +1,35 @@
+Reference Types in Go: 
+
+- Data Types that store the reference to the actual data rather than actual data
+- Reference Types in go lang:
+    - Pointers
+    - Slices
+    - Maps
+    - Channels
+    - Functions
+    - Ineterfaces (When conataining the reference type)
+
+
+Value Types in Go lang:
+
+- Data Types that store the actual data rather than reference
+- When we assign value to another variable or pass it to a function you create complete 
+  copy of data
+- Value Types in Go:
+    - Basic types: int, int8, int16, int32, int64
+    - Unsigned integers: uint, uint8, uint16, uint32, uint64, uintptr
+    - Floating point: float32, float64
+    - Complex numbers: complex64, complex128
+    - Boolean: bool
+    - String: string
+    - Arrays: [n]T
+    - Structs: struct{...}
+
+
+1. Pointers :
+- pointer is just a variable that holds the memory address of another variable
+- & operator gives the memory address of a variable
+- * operator gives the value at the address (also can be called as dereferencing operator)
+
+
+

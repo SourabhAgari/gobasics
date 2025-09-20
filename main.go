@@ -5,6 +5,7 @@ import (
 
 	"github.com/SourabhAgari/gobasics/defers"
 	"github.com/SourabhAgari/gobasics/loops"
+	"github.com/SourabhAgari/gobasics/references"
 	"github.com/SourabhAgari/gobasics/switchcase"
 )
 
@@ -32,4 +33,11 @@ func main() {
 	defers.CallOthers()
 	fmt.Println("--------------------")
 	fmt.Println("End of Defers Demonstration")
+
+	//7. Pointers in GoLang
+	fmt.Println("Pointers Demonstration")
+	fmt.Println("--------------------")
+	references.PointersFunctions()
+	fmt.Println("--------------------")
+	fmt.Println("End of Pointers Demonstration")
 }
