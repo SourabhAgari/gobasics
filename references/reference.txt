@@ -33,3 +33,14 @@ Value Types in Go lang:
 
 
 
+2. Aggredate Data Type:
+ - Array - Collection of data (Similar Data Types)
+ - Struct - Collection of data (Differnt Data Types)
+
+ Struct : 
+ - Collection of data of different data type
+ - Versatile (Heterogenous)
+ - Similar to classes 
+ - Can also have metadata for different parsing mechanisms 
+
+

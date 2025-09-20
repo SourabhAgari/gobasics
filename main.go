@@ -40,4 +40,19 @@ func main() {
 	references.PointersFunctions()
 	fmt.Println("--------------------")
 	fmt.Println("End of Pointers Demonstration")
+
+	// 8. Structs in GoLang
+	fmt.Println("Structs Demonstration")
+	fmt.Println("--------------------")
+	references.StructFunctions()
+	fmt.Println("--------------------")
+	fmt.Println("End of Structs Demonstration")
+
+	sum := 0
+	i := 0
+	for i < 10 {
+		sum += i
+		i++
+	}
+	fmt.Println("Sum is:", sum)
 }
