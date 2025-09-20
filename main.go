@@ -1,6 +1,9 @@
 package main
 
 import (
+	"fmt"
+
+	"github.com/SourabhAgari/gobasics/defers"
 	"github.com/SourabhAgari/gobasics/loops"
 	"github.com/SourabhAgari/gobasics/switchcase"
 )
@@ -23,4 +26,10 @@ func main() {
 	// 6. Switch Case
 	switchcase.CallOthers()
 
+	//7. Defers in GoLang
+	fmt.Println("Defers Demonstration")
+	fmt.Println("--------------------")
+	defers.CallOthers()
+	fmt.Println("--------------------")
+	fmt.Println("End of Defers Demonstration")
 }
