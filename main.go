@@ -1,11 +1,8 @@
 package main
 
 import (
-	"fmt"
-	"reflect"
-	"unsafe"
-
-	"github.com/SourabhAgari/gobasics/variables"
+	"github.com/SourabhAgari/gobasics/loops"
+	"github.com/SourabhAgari/gobasics/switchcase"
 )
 
 func main() {
@@ -18,13 +15,12 @@ func main() {
 	// 3. functions example
 
 	// 4. variables
-	variables.Variables()
+	//variables.Variables()
 
-	name := "Sourabh"
-	fmt.Println(&name)
+	// 5. Loops
+	loops.CallOthers()
 
-	stringHeader := (*reflect.StringHeader)(unsafe.Pointer(&name))
-	fmt.Println(stringHeader.Data)
-	fmt.Println(stringHeader.Len)
+	// 6. Switch Case
+	switchcase.CallOthers()
 
 }
