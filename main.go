@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/SourabhAgari/gobasics/arrays"
 	"github.com/SourabhAgari/gobasics/defers"
 	"github.com/SourabhAgari/gobasics/loops"
 	"github.com/SourabhAgari/gobasics/references"
@@ -48,11 +49,11 @@ func main() {
 	fmt.Println("--------------------")
 	fmt.Println("End of Structs Demonstration")
 
-	sum := 0
-	i := 0
-	for i < 10 {
-		sum += i
-		i++
-	}
-	fmt.Println("Sum is:", sum)
+	// 8. Arrays in GoLang
+	fmt.Println("Arrays Demonstration")
+	fmt.Println("--------------------")
+	arrays.ArrayFunctions()
+	fmt.Println("--------------------")
+	fmt.Println("End of Arrays Demonstration")
+
 }

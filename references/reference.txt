@@ -44,3 +44,7 @@ Value Types in Go lang:
  - Can also have metadata for different parsing mechanisms 
 
 
+
+Note : Arrays is used in golang but they are fixed and cant be growed hence not used in general.
+
+
