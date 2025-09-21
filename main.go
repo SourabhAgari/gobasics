@@ -56,4 +56,11 @@ func main() {
 	fmt.Println("--------------------")
 	fmt.Println("End of Arrays Demonstration")
 
+	// 9. Slices in GoLang
+	fmt.Println("Slices Demonstration")
+	fmt.Println("--------------------")
+	references.CallSliceFunctions()
+	fmt.Println("--------------------")
+	fmt.Println("End of Slices Demonstration")
+
 }
