@@ -68,9 +68,63 @@ func makeDemo() {
 	fmt.Println("make demo slice with extended length to full capacity", d)
 }
 
+func appendDemo() {
+	var s []int
+	fmt.Println(s)
+
+	fmt.Println("Appending 0")
+	s = append(s, 0)
+	fmt.Println(s)
+
+	fmt.Println("Appending 1")
+	s = append(s, 1)
+	fmt.Println(s)
+
+	fmt.Println("Appending 2,3,4,5")
+	// this shows that append is a variadic fuction
+	s = append(s, 2, 3, 4, 5)
+	fmt.Println(s)
+
+	fmt.Println("Appending another slice")
+	s = append(s, []int{6, 7, 8}...)
+	fmt.Println(s)
+
+}
+
+func twoDSlice() {
+	a := [][]string{
+		{"a", "b"},
+		{"c", "d"},
+	}
+	fmt.Println("2D Slice", a)
+
+	// below one is not allowed in go lang as lang is statically typed.
+	// b := [][]{
+	// 	[]int{1,2,3},
+	// 	[]string{"s","o","u"}
+	// }
+}
+
+func loopOverSlices() {
+	fmt.Println("Looping over slices")
+	fmt.Println("using traditional for loop")
+	s := []int{2, 3, 5, 7, 11, 13}
+	for i := 0; i < len(s); i++ {
+		fmt.Println("Element at index", i, "is", s[i])
+	}
+
+	fmt.Println("using range based for loop")
+	for index, value := range s {
+		fmt.Println("Element at index", index, "is", value)
+	}
+}
+
 func CallSliceFunctions() {
 	basicSlice()
 	advancedSlice()
 	extendingSliceLength()
 	makeDemo()
+	twoDSlice()
+	appendDemo()
+	loopOverSlices()
 }
