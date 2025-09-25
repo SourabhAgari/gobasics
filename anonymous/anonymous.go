@@ -38,7 +38,24 @@ func functionAsAVariable() {
 
 }
 
+// higher order function - function which takes another function as a parameter
+func applyOperation(a int, b int, operation func(int, int) int) int {
+	return operation(a, b)
+}
+func functionAsAParam() {
+	sum := applyOperation(3, 4, func(a int, b int) int {
+		return a + b
+	})
+	fmt.Println("sum is", sum)
+
+	multiply := applyOperation(3, 4, func(a int, b int) int {
+		return a * b
+	})
+	fmt.Println("multiply is", multiply)
+}
+
 func CallOthers() {
 	basicAnonymousFunc()
 	functionAsAVariable()
+	functionAsAParam()
 }
