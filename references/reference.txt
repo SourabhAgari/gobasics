@@ -47,4 +47,20 @@ Value Types in Go lang:
 
 Note : Arrays is used in golang but they are fixed and cant be growed hence not used in general.
 
+ Slices: 
+ - reference data type
+ - contain three parts 
+  - length
+  - capacity
+  - pointer to the first element
+ - backed by array
+ - created from a array
+ - create an slice, go runtime will internally create a backed array
+
+ maps :
+  - one of the reference types
+  - zero value is nil
+  - keys can be any data types that are comparable and values can be any type
+  - key value pair. created for easily accesing the data
+
 

@@ -63,4 +63,11 @@ func main() {
 	fmt.Println("--------------------")
 	fmt.Println("End of Slices Demonstration")
 
+	// 10. Maps in GoLang
+	fmt.Println("Maps Demonstration")
+	fmt.Println("--------------------")
+	references.CallMapFunctions()
+	fmt.Println("--------------------")
+	fmt.Println("End of Maps Demonstration")
+
 }
