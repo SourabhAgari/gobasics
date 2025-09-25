@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/SourabhAgari/gobasics/anonymous"
 	"github.com/SourabhAgari/gobasics/arrays"
 	"github.com/SourabhAgari/gobasics/defers"
 	"github.com/SourabhAgari/gobasics/loops"
@@ -69,5 +70,12 @@ func main() {
 	references.CallMapFunctions()
 	fmt.Println("--------------------")
 	fmt.Println("End of Maps Demonstration")
+
+	// 11. Anonymous functions in GoLang
+	fmt.Println("Anonymous Functions Demonstration")
+	fmt.Println("--------------------")
+	anonymous.CallOthers()
+	fmt.Println("--------------------")
+	fmt.Println("End of Anonymous Functions Demonstration")
 
 }
